@@ -1,0 +1,40 @@
+@import "./variable";
+
+.pagination-container{
+    display: flex;
+    margin-top: 10px;
+    justify-content: end;
+    column-gap: 30px;
+    align-items: center;
+
+    .page-size-control{
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        span{
+            color: #9FA2B4;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        select{
+            background-color: #F8F5FF;
+            height: 28px;
+            width: 61px;
+            border: none;
+        }
+        
+    }
+
+    .page-navigation{
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        span{
+            color: #9FA2B4;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+    }
+}

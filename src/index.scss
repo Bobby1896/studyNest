@@ -1,0 +1,87 @@
+@import "./styles/variable";
+
+* {
+  font-family: $primary-font;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  // background-color: $primary-bg-color;
+}
+
+.container {
+  width: 86%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: $logo-font;
+  span {
+    &:first-of-type {
+      color: $primary-color;
+    }
+  }
+  @media (max-width: 769px) {
+    font-size: 18px;
+  }
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px 21px;
+  border-radius: 50px;
+}
+
+button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.show-on-mobile{
+  display: none;
+  @media (max-width: 769px) {
+    display: block;
+  }
+}
+
+.hide-on-mobile{
+    @media (max-width: 769px) {
+      display: none;
+    }
+}
+
+.section-header-wrapper{
+  width: 100%;
+  position: relative;
+
+  .section-title{
+    font-weight: 700;
+    font-size: 35px;
+    text-align:center;
+    margin: 0;
+    @media (max-width: 769px) {
+      font-size: 20px;
+    }
+  }
+  svg{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    @media (max-width: 769px) {
+      width: 90px;
+    }
+  }
+}
+
+.space-for-skeleton{
+  margin-bottom: 10px;
+}

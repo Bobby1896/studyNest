@@ -1,0 +1,129 @@
+@import "./variable";
+
+.dashboard-home {
+  .home-banner {
+    width: 100%;
+    height: 266px;
+    border-radius: 20px;
+    background-color: $primary-color;
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    @media (max-width: 768px) {
+      grid-template-columns: auto;
+    }
+
+    header {
+      color: #fff;
+    }
+
+    img {
+      float: right;
+    }
+  }
+
+  .courses-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: auto;
+    }
+
+    .course-card {
+      padding: 25px;
+      background-color: #fff;
+      box-sizing: border-box;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 20px;
+      height: 440px;
+      overflow-y: scroll;
+
+      .title {
+        font-weight: 800;
+        font-size: 18px;
+        color: #333333;
+        margin-bottom: 20px;
+      }
+
+      .course-list {
+        margin-top: 21px;
+        .name {
+          font-weight: 600;
+          font-size: 14px;
+          color: #333333;
+          margin-bottom: 6px;
+        }
+        .date {
+          color: #8a8a8a;
+          font-size: 10px;
+          font-weight: 400;
+        }
+      }
+
+      .rec-course-card {
+        width: 100%;
+        min-height: 96px;
+        border-radius: 10px;
+        padding: 8px 22px;
+        box-sizing: border-box;
+        border: 1px solid #ececec;
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 13px;
+        gap: 10px;
+
+        .set-one {
+          display: flex;
+          gap: 5px;
+          flex-wrap: wrap;
+
+          .course-initials {
+            width: 40px;
+            height: 40px;
+            background-color: $primary-color;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            color: #fff;
+            font-size: 20px;
+            @media (max-width: 768px) {
+              width: 35px;
+              height: 35px;
+              font-size: 15px;
+            }
+          }
+
+          .course-name-and-file {
+            .course-name {
+              color: #333333;
+              font-weight: 600;
+              font-size: 15px;
+              margin-bottom: 6px;
+            }
+            .file {
+              padding: 4px 8px;
+              border-radius: 50px;
+              background-color: #76768012;
+              width: 105px;
+              display: flex;
+              align-items: center;
+              column-gap: 3px;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

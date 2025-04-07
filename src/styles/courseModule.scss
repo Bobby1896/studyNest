@@ -1,0 +1,67 @@
+@import "./variable";
+
+.course-module{
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow-x: scroll;
+
+    .title{
+        font-weight: 800;
+        font-size: 18px;
+        color: #333333;
+        margin-bottom: 15px;
+    }
+
+    input{
+        height: 42px;
+        padding: 12px;
+        box-sizing: border-box;
+        background-color: #F7F7F7;
+        border: none;
+        width: 520px;
+
+        &::placeholder{
+            color: #757575;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    .table{
+        margin-top: 24px;
+        min-width: 650px;
+        .table-content{
+            margin-bottom: 20px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns:1fr 1fr 8%;
+            align-items: center;
+            column-gap: 10px;
+
+            &.table-head{
+                font-weight: 700;
+                font-size: 16px;
+                color: #272833;
+            }
+
+            &.table-body{
+                border: 1px solid #E7E7ED;
+                border-radius: 12px;
+                height: 64px;
+                font-weight: 500;
+                font-size: 15px;
+
+                .icon-and-name{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 5px;
+                }
+            }
+        }
+    }
+
+}
